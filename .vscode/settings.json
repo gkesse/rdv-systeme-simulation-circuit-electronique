@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "qapplication": "cpp",
+        "klocalizedstring": "cpp",
+        "qmainwindow": "cpp",
+        "kaboutdata": "cpp",
+        "qstandardpaths": "cpp",
+        "qdir": "cpp",
+        "qurl": "cpp",
+        "qsplitter": "cpp",
+        "atomic": "cpp",
+        "memory_resource": "cpp",
+        "stop_token": "cpp",
+        "qtreewidget": "cpp",
+        "qwidget": "cpp",
+        "mainwindow": "cpp",
+        "kmessagebox": "cpp",
+        "qshareddatapointer": "cpp"
+    },
+    "cmake.sourceDirectory": "C:/dev/pratique/rdv-systeme-simulation-circuit-electronique/v02/src"
+}

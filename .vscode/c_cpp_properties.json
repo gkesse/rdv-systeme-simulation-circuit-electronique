@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Qt/6.5.2/mingw_64/include",
+                "C:/Qt/6.5.2/mingw_64/include/QtWidgets"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++",
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "WSL",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/admins/Qt5.14.2/5.14.2/gcc_64/include",
+                "/home/admins/Qt5.14.2/5.14.2/gcc_64/include/QtCore",
+                "/home/admins/Qt5.14.2/5.14.2/gcc_64/include/QtWidgets",
+                "/home/admins/Qt5.14.2/5.14.2/gcc_64/include/QtGui",
+                "/usr/include/KF5/KI18n",
+                "/usr/include/KF5/KCoreAddons",
+                "/usr/include/KF5/KParts",
+                "/usr/include/KF5/KXmlGui",
+                "/usr/include/KF5/KWidgetsAddons"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

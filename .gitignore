@@ -1,32 +1,13 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+/**/~*
+/**/*.bak
+/**/node_modules/
+/**/github/
+/**/public/locales/
+/**/public/static/
+/**/logs/
+/**/package-lock.json
+/**/.env
+/**/build-mingw/bin/
+/**/build-mingw/build/
+/**/build-wsl/bin/
+/**/build-wsl/build/
