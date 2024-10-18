@@ -11,12 +11,14 @@ class ProjectManager : public ItemSelector
 {
     Q_OBJECT
 
+private:
+    ProjectManager(KateMDI::ToolView *parent);
+
 public:
     ~ProjectManager();
     static ProjectManager *self(KateMDI::ToolView *parent = nullptr);
 
-private:
-    ProjectManager(KateMDI::ToolView *parent);
+    static QString toolViewIdentifier() { return "ProjectManager"; }
 
 public slots:
     void slotOpenProject();

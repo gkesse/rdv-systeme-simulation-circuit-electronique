@@ -37,6 +37,8 @@ Parts
 )
 
 find_package(Qt5 REQUIRED COMPONENTS
+Core
+Gui
 Widgets
 )
 
@@ -54,19 +56,40 @@ ecm_setup_version(${VERSION}
     VERSION_HEADER rdv_app_version.h
 )
 
+ecm_qt_declare_logging_category(readyspice_SRCS
+    HEADER rdv_app_debug.h
+    IDENTIFIER RDV_LOG
+    CATEGORY_NAME org.kde.ready.spice
+    DEFAULT_SEVERITY Warning
+)
+
 add_definitions(-fPIC)
 
 add_executable(readyspice
 main.cpp
-rdv_app_readyspice.cpp
-rdv_app_view_area.cpp
-rdv_app_project_manager.cpp
-rdv_app_item_selector.cpp
-rdv_app_tool_view.cpp
-rdv_app_variant.cpp
-rdv_app_main_window.cpp
+rdv_app_debug.cpp
+rdv_app_circuit_document.cpp
+rdv_app_circuit_icn_document.cpp
 rdv_app_doc_manager.cpp
 rdv_app_document.cpp
+rdv_app_flow_code_document.cpp
+rdv_app_flow_icn_document.cpp
+rdv_app_icn_document.cpp
+rdv_app_item_document.cpp
+rdv_app_item_selector.cpp
+rdv_app_main_window.cpp
+rdv_app_mechanics_document.cpp
+rdv_app_project_manager.cpp
+rdv_app_readyspice.cpp
+rdv_app_text_document.cpp
+rdv_app_tool_view.cpp
+rdv_app_variant.cpp
+rdv_app_view_area.cpp
+rdv_app_view_container.cpp
+rdv_app_view.cpp
+rdv_app_side_bar.cpp
+rdv_app_splitter.cpp
+rdv_app_gui_client.cpp
 )
 
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
@@ -74,6 +97,8 @@ RUNTIME_OUTPUT_DIRECTORY ../bin
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
+Qt5::Core
+Qt5::Gui
 Qt5::Widgets
 KF5::CoreAddons
 KF5::I18n

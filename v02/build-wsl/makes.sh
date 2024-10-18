@@ -10,4 +10,4 @@ do
     shift
 done
 
-make -f commands.mak $MAKE_CMD ARGS=\"$MAKE_ARGS\"
+make -f commands.mak $MAKE_CMD ARGS="$MAKE_ARGS"

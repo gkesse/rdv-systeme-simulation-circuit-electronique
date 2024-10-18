@@ -1,12 +1,18 @@
 #pragma once
 
-#include "rdv_app_include.h"
+#include "rdv_app_view.h"
+
+class ViewContainer;
 
 class ViewArea : public QSplitter
 {
     Q_OBJECT
 
 public:
-    explicit ViewArea(QWidget *_parent = nullptr);
-    ~ViewArea();
+    ViewArea(QWidget *parent, ViewContainer *viewContainer, int id, bool showOpenButton);
+    ~ViewArea() override;
+    View *view() const;
+
+private:
+    QPointer<View> p_view;
 };

@@ -1,12 +1,14 @@
 /**/~*
 /**/*.bak
 /**/node_modules/
-/**/github/
+#/**/github/
 /**/public/locales/
 /**/public/static/
 /**/logs/
 /**/package-lock.json
 /**/.env
+/bin/
+/build/
 /**/build-mingw/bin/
 /**/build-mingw/build/
 /**/build-wsl/bin/

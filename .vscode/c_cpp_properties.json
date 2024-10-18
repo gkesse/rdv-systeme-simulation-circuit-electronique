@@ -30,7 +30,8 @@
                 "/usr/include/KF5/KCoreAddons",
                 "/usr/include/KF5/KParts",
                 "/usr/include/KF5/KXmlGui",
-                "/usr/include/KF5/KWidgetsAddons"
+                "/usr/include/KF5/KWidgetsAddons",
+                "/usr/include/KF5/KConfigCore"
             ],
             "defines": [
                 "_DEBUG",

@@ -15,7 +15,7 @@ int main(int _argc, char **_argv)
         i18n("ReadySpice"),
         READYSPICE_VERSION_STRING,
         i18n("Système de simulation de circuits électroniques."),
-        KAboutLicense::GPL_V2,
+        KAboutLicense::LGPL_V3,
         i18n("(C) 2024-2024 | Développeurs ReadySpice"),
         "",
         "https://readydev.ovh/home",

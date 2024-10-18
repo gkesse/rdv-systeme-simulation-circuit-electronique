@@ -16,7 +16,26 @@
         "qwidget": "cpp",
         "mainwindow": "cpp",
         "kmessagebox": "cpp",
-        "qshareddatapointer": "cpp"
+        "qshareddatapointer": "cpp",
+        "qpointer": "cpp",
+        "qelapsedtimer": "cpp",
+        "qlabel": "cpp",
+        "qfont": "cpp",
+        "qtimer": "cpp",
+        "kxmlguiclient": "cpp",
+        "qlayout": "cpp",
+        "kshortcutsdialog": "cpp",
+        "ksharedconfig": "cpp",
+        "kmultitabbar": "cpp",
+        "kconfiggroup": "cpp",
+        "qmenu": "cpp",
+        "string_view": "cpp",
+        "limits": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp"
     },
-    "cmake.sourceDirectory": "C:/dev/pratique/rdv-systeme-simulation-circuit-electronique/v02/src"
+    "cmake.sourceDirectory": "/mnt/c/dev/pratique/rdv-systeme-simulation-circuit-electronique/v02/src",
+    "cmake.debugConfig": {
+        "args": []
+    }
 }
