@@ -32,7 +32,9 @@
         "string_view": "cpp",
         "limits": "cpp",
         "*.tcc": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "typeinfo": "cpp",
+        "qtoolbutton": "cpp"
     },
     "cmake.sourceDirectory": "/mnt/c/dev/pratique/rdv-systeme-simulation-circuit-electronique/v02/src",
     "cmake.debugConfig": {

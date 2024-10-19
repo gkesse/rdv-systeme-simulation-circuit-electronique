@@ -13,4 +13,10 @@ class ItemLibrary : public QObject
 public:
     ItemLibrary();
     ~ItemLibrary() override;
+    static ItemLibrary *itemLibrary();
+
+    LibraryItemList *items() { return &m_items; }
+
+protected:
+    LibraryItemList m_items;
 };

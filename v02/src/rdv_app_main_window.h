@@ -18,6 +18,7 @@ namespace KateMDI
         ~MainWindow() override;
         void setToolViewStyle(KMultiTabBar::KMultiTabBarStyle style);
         ToolView *createToolView(const QString &identifier, KMultiTabBar::KMultiTabBarPosition pos, const QIcon &icon, const QString &text);
+        void updateSidebarMinimumSizes();
 
     private:
         Sidebar *m_sidebars[4];

@@ -1,4 +1,5 @@
 #include "rdv_app_canvas.h"
+#include "rdv_app_canvas_chunk.h"
 
 static int gcd(int a, int b)
 {
@@ -84,4 +85,12 @@ void KtlQCanvas::setTiles(QPixmap p, int h, int v, int tilewidth, int tileheight
         retune(s < 128 ? s : std::max(tilewidth, tileheight));
     }
     setAllChanged();
+}
+
+void KtlQCanvas::retune(int chunksze, int mxclusters)
+{
+}
+
+void KtlQCanvas::setChanged(const QRect &area)
+{
 }

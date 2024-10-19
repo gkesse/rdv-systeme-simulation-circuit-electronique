@@ -100,4 +100,9 @@ namespace KateMDI
 
         return v;
     }
+
+    void MainWindow::updateSidebarMinimumSizes()
+    {
+        m_sidebars[KMultiTabBar::Right]->updateMinimumSize();
+    }
 }

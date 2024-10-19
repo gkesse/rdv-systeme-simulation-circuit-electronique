@@ -6,6 +6,14 @@
 #include "rdv_app_document.h"
 #include "rdv_app_tool_view.h"
 #include "rdv_app_component_selector.h"
+#include "rdv_app_sub_circuit.h"
+#include "rdv_app_flow_part_selector.h"
+#include "rdv_app_item_editor.h"
+#include "rdv_app_context_help.h"
+#include "rdv_app_language_manager.h"
+#include "rdv_app_symbol_viewer.h"
+#include "rdv_app_oscilloscope.h"
+#include "rdv_app_scope_screen.h"
 
 ReadySpice *ReadySpice::m_pSelf = nullptr;
 
@@ -107,8 +115,7 @@ void ReadySpice::setupToolDocks()
     tv->setObjectName("ComponentSelector-ToolView");
     ComponentSelector::self(tv);
 
-    // Create an instance of the subcircuits interface, now that we have created the component selector
-    subcircuits();
+    Subcircuits::subcircuits();
     Subcircuits::loadSubcircuits();
 
     tv = createToolView(FlowPartSelector::toolViewIdentifier(), KMultiTabBar::Left, QIcon::fromTheme("flowcode"), i18n("Flow Parts"));
@@ -139,7 +146,7 @@ void ReadySpice::setupToolDocks()
     SymbolViewer::self(tv);
 #endif
 
-    addOscilloscopeAsToolView(this);
+    Oscilloscope::addOscilloscopeAsToolView(this);
 #if 1
     tv = createToolView(ScopeScreen::toolViewIdentifier(), KMultiTabBar::Bottom, QIcon::fromTheme("oscilloscope"), i18n("Scope Screen (Very Rough)"));
     tv->setObjectName("ScopeScreen-ToolView");

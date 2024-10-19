@@ -2,6 +2,8 @@
 
 #include "rdv_app_include.h"
 
+class KtlQCanvas;
+
 class KtlQCanvasItem : public QObject
 {
     Q_OBJECT

@@ -22,6 +22,7 @@ namespace KateMDI
         bool showWidget(ToolView *widget);
         bool hideWidget(ToolView *widget);
         void updateLastSize();
+        void updateMinimumSize();
 
         KMultiTabBar::KMultiTabBarPosition sidebarPosition() const { return m_pos; }
         KMultiTabBar::KMultiTabBarStyle sidebarTabStyle() const { return m_sidebarTabStyle; }

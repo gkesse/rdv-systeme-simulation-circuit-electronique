@@ -12,6 +12,7 @@
 #include <QTreeWidget>
 #include <QLabel>
 #include <QToolButton>
+#include <QTableWidget>
 #include <QLayout>
 #include <QMenu>
 #include <QCommandLineParser>

@@ -1,5 +1,7 @@
 #include "rdv_app_component_selector.h"
 #include "rdv_app_tool_view.h"
+#include "rdv_app_item_library.h"
+#include "rdv_app_library_item.h"
 
 ComponentSelector *ComponentSelector::m_pSelf = nullptr;
 
@@ -15,8 +17,8 @@ ComponentSelector::ComponentSelector(KateMDI::ToolView *parent)
 
     setListCaption(i18n("Component"));
 
-    LibraryItemList *items = itemLibrary()->items();
-    qCDebug(KTL_LOG) << " there are " << items->count() << " items";
+    LibraryItemList *items = ItemLibrary::itemLibrary()->items();
+    qCDebug(RDV_LOG) << " il y a " << items->count() << " items";
     const LibraryItemList::iterator end = items->end();
     for (LibraryItemList::iterator it = items->begin(); it != end; ++it)
     {

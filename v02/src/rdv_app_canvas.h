@@ -13,7 +13,12 @@ public:
     KtlQCanvas(const int w, const int h);
     KtlQCanvas(QPixmap p, int h, int v, int tilewidth, int tileheight);
     ~KtlQCanvas() override;
+
     virtual void setTiles(QPixmap tiles, int h, int v, int tilewidth, int tileheight);
+    virtual void retune(int chunksize, int maxclusters = 100);
+    virtual void setChanged(const QRect &area);
+
+    virtual void setAllChanged() { setChanged(m_size); }
 
 private:
     void init(int w, int h, int chunksze = 16, int maxclust = 100);

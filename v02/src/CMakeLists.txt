@@ -63,10 +63,16 @@ ecm_qt_declare_logging_category(readyspice_SRCS
     DEFAULT_SEVERITY Warning
 )
 
-add_definitions(-fPIC)
+set(gui_UI
+rdv_app_context_help_widget.ui
+)
 
-add_executable(readyspice
-main.cpp
+ki18n_wrap_ui(gui_STAT_SRCS
+${gui_UI}
+)
+
+SET(readyspice_SRCS
+${gui_STAT_SRCS}
 rdv_app_debug.cpp
 rdv_app_circuit_document.cpp
 rdv_app_circuit_icn_document.cpp
@@ -90,6 +96,27 @@ rdv_app_view.cpp
 rdv_app_side_bar.cpp
 rdv_app_splitter.cpp
 rdv_app_gui_client.cpp
+rdv_app_ilv_item.cpp
+rdv_app_component_selector.cpp
+rdv_app_sub_circuit.cpp
+rdv_app_item_editor.cpp
+rdv_app_context_help.cpp
+rdv_app_language_manager.cpp
+rdv_app_oscilloscope.cpp
+rdv_app_flow_part_selector.cpp
+rdv_app_symbol_viewer.cpp
+rdv_app_item_library.cpp
+rdv_app_scope_screen.cpp
+rdv_app_property_editor.cpp
+rdv_app_component_model_widget.cpp
+rdv_app_orientation_widget.cpp
+)
+
+add_definitions(-fPIC)
+
+add_executable(readyspice
+main.cpp
+${readyspice_SRCS}
 )
 
 set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES

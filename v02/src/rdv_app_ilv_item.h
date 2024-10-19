@@ -20,6 +20,7 @@ public:
     ~ILVItem() override;
 
     bool isRemovable() const { return b_isRemovable; }
+    void setRemovable(bool isRemovable) { b_isRemovable = isRemovable; }
 
 protected:
     bool b_isRemovable;

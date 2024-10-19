@@ -194,4 +194,24 @@ namespace KateMDI
         if (s[i] > 2)
             m_lastSize = s[i];
     }
+
+    void Sidebar::updateMinimumSize()
+    {
+        QSize minSize;
+
+        QList<ToolView *>::iterator end = m_toolviews.end();
+        for (QList<ToolView *>::iterator it = m_toolviews.begin(); it != end; ++it)
+        {
+            QSize s = (*it)->childrenRect().size();
+            minSize = minSize.expandedTo(s);
+        }
+
+        minSize.setWidth(minSize.width() - 30);
+        minSize.setHeight(minSize.height() - 30);
+
+        for (QList<ToolView *>::iterator it = m_toolviews.begin(); it != end; ++it)
+        {
+            (*it)->setMinimumSize(minSize);
+        }
+    }
 }
